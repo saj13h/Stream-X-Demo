@@ -7,5 +7,7 @@
 ## Open -> https://saj13h.github.io/Stream-X-Demo/
 ## Screenshots
 
-![App Screenshot](demo.png,demo1.png,demo2.png)
+![App Screenshot](demo.png)
+![App Screenshot](demo1.png)
+![App Screenshot](demo2.png)
 
