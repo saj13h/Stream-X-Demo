@@ -20,6 +20,8 @@
       flex-direction: column;
       align-items: center;
       position: initial;
+      top: auto
+      
     }
     #nav-bar{
       display:flex;
