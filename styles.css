@@ -18,7 +18,8 @@
     #header{
       display:flex;
       flex-direction: column;
-      align-items: center
+      align-items: center;
+      position: initial;
     }
     #nav-bar{
       display:flex;

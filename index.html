@@ -4,8 +4,28 @@
     <link rel="stylesheet" href="styles.css"/>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta chatset="utf-8"/>
+    <meta charset="utf-8"/>
     <title>SmartFit Watch</title>
+    <script>
+      let lastScrollTop = 0; // Track the last scroll position
+    
+      window.addEventListener('scroll', function () {
+        const header = document.getElementById('header');
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+        if (currentScroll > lastScrollTop) {
+          // Scrolling Down: Hide the header
+          header.style.transform = 'translateY(-100%)';
+        } else {
+          // Scrolling Up: Show the header
+          header.style.transform = 'translateY(0)';
+        }
+    
+        // Update the last scroll position
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+      });
+    </script>
+    
   </head>
   <body>
     <header id="header">
